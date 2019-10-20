@@ -14,6 +14,7 @@
 		260F0F5323536185001F8F75 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 260F0F5223536185001F8F75 /* Preview Assets.xcassets */; };
 		260F0F5623536185001F8F75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 260F0F5423536185001F8F75 /* LaunchScreen.storyboard */; };
 		2678A19723536D3C00B49CCF /* OpenDoorRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2678A19623536D3C00B49CCF /* OpenDoorRequest.swift */; };
+		26A81333235C76D200113F87 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A81332235C76D200113F87 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		260F0F5523536185001F8F75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		260F0F5723536185001F8F75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2678A19623536D3C00B49CCF /* OpenDoorRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenDoorRequest.swift; sourceTree = "<group>"; };
+		26A81332235C76D200113F87 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				260F0F4923536181001F8F75 /* AppDelegate.swift */,
 				260F0F4B23536182001F8F75 /* SceneDelegate.swift */,
 				260F0F4D23536182001F8F75 /* ContentView.swift */,
+				26A81332235C76D200113F87 /* HeaderView.swift */,
 				260F0F4F23536185001F8F75 /* Assets.xcassets */,
 				260F0F5423536185001F8F75 /* LaunchScreen.storyboard */,
 				260F0F5723536185001F8F75 /* Info.plist */,
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26A81333235C76D200113F87 /* HeaderView.swift in Sources */,
 				260F0F4A23536181001F8F75 /* AppDelegate.swift in Sources */,
 				260F0F4C23536182001F8F75 /* SceneDelegate.swift in Sources */,
 				260F0F4E23536182001F8F75 /* ContentView.swift in Sources */,
