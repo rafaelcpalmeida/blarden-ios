@@ -15,7 +15,7 @@ struct HeaderView: View {
                 .edgesIgnoringSafeArea(.all)
 
             Image("Door").resizable()
-                .frame(width: 100.0, height: 100.0)
+                .frame(width: 214, height: 200)
         }
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 200)
     }

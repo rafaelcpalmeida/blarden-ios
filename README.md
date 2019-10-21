@@ -1,3 +1,3 @@
 # blarden-ios
 
-Door icon by [icons8](https://icons8.com/icons/set/door)
+Gate icon by [vectorpocket](https://www.freepik.com/free-photos-vectors/background)
