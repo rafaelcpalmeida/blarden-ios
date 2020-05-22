@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  blarden
+
+  Created by Rafael Almeida on 22/05/2020.
+  Copyright © 2020 Rafael Almeida. All rights reserved.
+*/
+
+"Front door" = "Entrada principal";
+"Outside gate" = "Portão exterior";
+"Garage gate" = "Portão interior";
+"Please authenticate to proceed" = "Autentique-se para continuar";
+"✓" = "✓";
+"✗" = "✗";

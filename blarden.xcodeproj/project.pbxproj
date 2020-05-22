@@ -13,8 +13,12 @@
 		260F0F5023536185001F8F75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 260F0F4F23536185001F8F75 /* Assets.xcassets */; };
 		260F0F5323536185001F8F75 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 260F0F5223536185001F8F75 /* Preview Assets.xcassets */; };
 		260F0F5623536185001F8F75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 260F0F5423536185001F8F75 /* LaunchScreen.storyboard */; };
+		263C842624775C0F006469C3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 263C842824775C0F006469C3 /* Localizable.strings */; };
+		263C843324775DF3006469C3 /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263C843224775DF3006469C3 /* Translation.swift */; };
+		266BCE9E2475EDD200589D14 /* BlardenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266BCE9D2475EDD200589D14 /* BlardenButton.swift */; };
 		2678A19723536D3C00B49CCF /* OpenDoorRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2678A19623536D3C00B49CCF /* OpenDoorRequest.swift */; };
-		26A81333235C76D200113F87 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A81332235C76D200113F87 /* HeaderView.swift */; };
+		267970E124705CC900253A89 /* BlardenButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267970E024705CC900253A89 /* BlardenButtonStyle.swift */; };
+		26A0BDBD24774DC40005D202 /* Authenticate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A0BDBC24774DC40005D202 /* Authenticate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +30,14 @@
 		260F0F5223536185001F8F75 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		260F0F5523536185001F8F75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		260F0F5723536185001F8F75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		263C842724775C0F006469C3 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		263C842E24775C81006469C3 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		263C842F24775C81006469C3 /* pt-PT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		263C843224775DF3006469C3 /* Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
+		266BCE9D2475EDD200589D14 /* BlardenButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlardenButton.swift; sourceTree = "<group>"; };
 		2678A19623536D3C00B49CCF /* OpenDoorRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenDoorRequest.swift; sourceTree = "<group>"; };
-		26A81332235C76D200113F87 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		267970E024705CC900253A89 /* BlardenButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlardenButtonStyle.swift; sourceTree = "<group>"; };
+		26A0BDBC24774DC40005D202 /* Authenticate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authenticate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,15 +70,14 @@
 		260F0F4823536181001F8F75 /* blarden */ = {
 			isa = PBXGroup;
 			children = (
-				260F0F4923536181001F8F75 /* AppDelegate.swift */,
-				260F0F4B23536182001F8F75 /* SceneDelegate.swift */,
-				260F0F4D23536182001F8F75 /* ContentView.swift */,
-				26A81332235C76D200113F87 /* HeaderView.swift */,
+				267970D5246F4D4600253A89 /* model */,
+				267970D6246F4D4D00253A89 /* view */,
+				267970D7246F4D5100253A89 /* controller */,
 				260F0F4F23536185001F8F75 /* Assets.xcassets */,
 				260F0F5423536185001F8F75 /* LaunchScreen.storyboard */,
 				260F0F5723536185001F8F75 /* Info.plist */,
-				2678A19623536D3C00B49CCF /* OpenDoorRequest.swift */,
 				260F0F5123536185001F8F75 /* Preview Content */,
+				263C842824775C0F006469C3 /* Localizable.strings */,
 			);
 			path = blarden;
 			sourceTree = "<group>";
@@ -81,6 +90,35 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		267970D5246F4D4600253A89 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				260F0F4923536181001F8F75 /* AppDelegate.swift */,
+				260F0F4B23536182001F8F75 /* SceneDelegate.swift */,
+				266BCE9D2475EDD200589D14 /* BlardenButton.swift */,
+				263C843224775DF3006469C3 /* Translation.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		267970D6246F4D4D00253A89 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				267970E024705CC900253A89 /* BlardenButtonStyle.swift */,
+				260F0F4D23536182001F8F75 /* ContentView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		267970D7246F4D5100253A89 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				2678A19623536D3C00B49CCF /* OpenDoorRequest.swift */,
+				26A0BDBC24774DC40005D202 /* Authenticate.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,6 +129,7 @@
 				260F0F4223536181001F8F75 /* Sources */,
 				260F0F4323536181001F8F75 /* Frameworks */,
 				260F0F4423536181001F8F75 /* Resources */,
+				2645A85924767CB90072638B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -123,6 +162,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-PT",
 			);
 			mainGroup = 260F0F3D23536181001F8F75;
 			productRefGroup = 260F0F4723536181001F8F75 /* Products */;
@@ -140,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				260F0F5623536185001F8F75 /* LaunchScreen.storyboard in Resources */,
+				263C842624775C0F006469C3 /* Localizable.strings in Resources */,
 				260F0F5323536185001F8F75 /* Preview Assets.xcassets in Resources */,
 				260F0F5023536185001F8F75 /* Assets.xcassets in Resources */,
 			);
@@ -147,15 +188,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2645A85924767CB90072638B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		260F0F4223536181001F8F75 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26A81333235C76D200113F87 /* HeaderView.swift in Sources */,
+				266BCE9E2475EDD200589D14 /* BlardenButton.swift in Sources */,
+				26A0BDBD24774DC40005D202 /* Authenticate.swift in Sources */,
 				260F0F4A23536181001F8F75 /* AppDelegate.swift in Sources */,
+				263C843324775DF3006469C3 /* Translation.swift in Sources */,
 				260F0F4C23536182001F8F75 /* SceneDelegate.swift in Sources */,
 				260F0F4E23536182001F8F75 /* ContentView.swift in Sources */,
+				267970E124705CC900253A89 /* BlardenButtonStyle.swift in Sources */,
 				2678A19723536D3C00B49CCF /* OpenDoorRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -167,8 +231,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				260F0F5523536185001F8F75 /* Base */,
+				263C842E24775C81006469C3 /* pt-PT */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		263C842824775C0F006469C3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				263C842724775C0F006469C3 /* en */,
+				263C842F24775C81006469C3 /* pt-PT */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -178,6 +252,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -238,6 +313,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -302,6 +378,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = pt.rafaelalmeida.blarden;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -324,6 +401,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = pt.rafaelalmeida.blarden;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
